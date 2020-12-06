@@ -1,14 +1,15 @@
 # AOC 2020, 
 # Day 5, Part 1
 
-# Objective: Examine list of boarding passes, find seat highest seat ID (row * 8 + column) in list. 
+# Objective: Examine list of boarding passes, find seat highest seat ID 
+#   (row * 8 + column) in list. 
 # Boarding passes are in binary format
-# FBFBBFFRLR
+#   FBFBBFFRLR
 # F means go to first half, B means go to back half
 # Then L and R mean left and right half of the row (for determining column)
 # So, decoding FBFBBFFRLR reveals that it is the seat at row 44, column 5.
 
-# Basically will treat these like binary numbers-- because that's what they are.
+# Basically will treat these like binary numbers, because that's what they are.
 # And for this part, we just need to find the highest number.
 
 def parse_input(file_name):
@@ -30,8 +31,8 @@ def parse_input(file_name):
         return None
 
 def process_pass(pass_string):
-    # going to replace F and B with 0 and 1, and L and R with 0 and 1, respectively
-    # Then we'll have everything in binary
+    # going to replace F and B with 0 and 1, and L and R with 0 and 1,
+    # respectively. This gives us an equivalent binary string
     raw_binary = pass_string.replace('F', '0')
     raw_binary = raw_binary.replace('B', '1')
     raw_binary = raw_binary.replace('L', '0')

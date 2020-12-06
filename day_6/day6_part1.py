@@ -1,12 +1,15 @@
 # AOC 2020, 
 # Day 6, Part 1
 
-# Objective: Input is lists of question letters each group member has answered 'yes' to. Need to get count of how many questions have at least one 'yes' answer for each group and sum that.
+# Objective: Input is lists of question letters each group member has answered
+#   'yes' to. Need to get count of how many questions have at least one 'yes' 
+#   answer for each group and sum that.
 
 import string
 
 def parse_input(file_name):
-    # The input will be processed to be a string for each group, with each members' answers separated by a space
+    # The input will be processed to be a string for each group, with each 
+    #   member's answers separated by a space
     data_left = True
     input_array = []
     try:

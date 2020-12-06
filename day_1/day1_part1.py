@@ -1,9 +1,8 @@
 # AOC 2020
 # Day 1, Part 1
 
-# Objective: get 2 numbers from input that sum to 2020; return the result of multiplying them
-
-import time
+# Objective: get 2 numbers from input that sum to 2020; return the result of 
+#   multiplying them
 
 def parse_input(file_name):
     data_left = True

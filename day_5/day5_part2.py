@@ -1,9 +1,10 @@
 # AOC 2020, 
 # Day 5, Part 2
 
-# Objective: Find your seat number-- it will be the 'missing' seat number. However, some of the seats at the very front and back aren't on the flight, so that must be taken into account.
+# Objective: Find your seat number-- it will be the 'missing' seat number. 
+#   However, some of the seats at the very front and back aren't on the flight,
+#   so that must be taken into account.
 
-# These are the methods from part 1 of today, will also just import them in the future
 from day5_part1 import parse_input, process_pass
 
 temp_passes = parse_input('day_5/input/day5_part1_input.txt')

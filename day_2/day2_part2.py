@@ -2,42 +2,11 @@
 # Day 2, Part 2
 
 # Objective: Validate passwords using different scheme-- upper bound and 
-# lower bound are now indices (not zero-indexed), and exactly one of these indices must 
-# contain letter.
+#   lower bound are now indices (not zero-indexed), and exactly one of 
+#   these indices must contain letter.
 
 import re
-
-def parse_input(file_name):
-    data_left = True
-    input_array = []
-    try:
-        f = open(file_name, 'r')
-
-        while data_left == True:
-            temp = f.readline()
-            if temp == '':
-                data_left = False
-                break
-            input_array.append(temp)
-
-        return input_array
-    except Exception as e:
-        print(e)
-        return None
-
-def process_input(input_array):
-    # This takes the string that represents each password and its 
-    # policy and breaks it into a tuple of the following format:
-    #     (lower_bound, upper_bound, letter, password_string)
-
-    new_array = []
-    password_regex = re.compile('(\d+)-(\d+) (\w): (\w+)')
-
-    for item in input_array:
-        result = password_regex.match(item)
-        new_array.append((result[1], result[2], result[3], result[4]))
-
-    return new_array
+from day2_part1 import parse_input, process_input
 
 def check_password_validity(password_tuple):
     lower_bound = int(password_tuple[0])

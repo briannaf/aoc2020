@@ -6,7 +6,7 @@
 # That is,
 #     [lower_bound]-[higher_bound] [letter]: [password_string]
 # Where lower_bound and higher_bound are the range (inclusive) of 
-# times letter must appear in password_string for it to be valid.
+#   times letter must appear in password_string for it to be valid.
 
 # Return the number of valid passwords in input.
 

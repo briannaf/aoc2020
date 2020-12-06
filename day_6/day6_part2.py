@@ -1,7 +1,10 @@
 # AOC 2020, 
 # Day 6, Part 2
 
-# Objective: Same input list and same objective as part one, but instead of the sum including each question at least one group member has answered 'yes' to, it must include how many questions every group member answered 'yes' to.
+# Objective: Same input list and same objective as part one, but instead of the
+#   sum including each question at least one group member has answered 'yes'
+#   to, it must instead include how many questions every group member answered
+#   'yes' to.
 
 import string
 from day6_part1 import parse_input
@@ -15,8 +18,10 @@ def count_common_answers(group):
     # make a set out of lowercase a-z
     result = set(string.ascii_lowercase)
 
-    # find the intersection of that set against each group member's answer set, all in a row.
-    # if a group member doesn't have it in their answers, it'll get knocked out of the result set
+    # find the intersection of that set against each group member's answer set,
+    #   all in a row.
+    # if a group member doesn't have it in their answers, it'll get knocked out
+    #   of the result set
     for i in group:
         i = set(i)
         result = i.intersection(result)
