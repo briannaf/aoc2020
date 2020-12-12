@@ -84,7 +84,3 @@ for i in range(cols):
 
 
 print(result)
-
-# 6880 too high
-# 1797 too low
-# 2118 too low
