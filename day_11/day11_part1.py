@@ -1,13 +1,17 @@
 # AOC 2020, 
 # Day 11, Part 1
 
-# Objective: This puzzle seems to be like Conway's game of life, but with different rules.
-    # The input is a seating chart. '.' represents floor, 'L' represents empty seats, and '#' represents an occupied seat. 
-    # Rules:
-    #     - An empty seat with no occupied seats adjacent to it becomes occupied
-    #     - An occupied seat with four or more adjacent occupied seats, it becomes empty
-    #     - No change otherwise.
-    # The pattern will reach equilibrium at some point. How many seats are occupied when that happens?
+# Objective: This puzzle seems to be like Conway's game of life, but with 
+# different rules.
+# The input is a seating chart. '.' represents floor, 'L' represents empty 
+# seats, and '#' represents an occupied seat. 
+# Rules:
+    # - An empty seat with no occupied seats adjacent to it becomes occupied
+    # - An occupied seat with four or more adjacent occupied seats, it becomes
+    # empty
+    #  - No change otherwise.
+# The pattern will reach equilibrium at some point. How many seats are 
+# occupied when that happens?
 
 seating_chart = []
 

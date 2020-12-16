@@ -1,7 +1,8 @@
 # AOC 2020, 
 # Day 11, Part 2
 
-# Objective: Now instead of counting adjacent seats, count first visible seat in each direction
+# Objective: Now instead of counting adjacent seats, count first visible seat
+#  in each direction
 
 from day11_part1 import parse_input
 

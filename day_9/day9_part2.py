@@ -1,7 +1,10 @@
 # AOC 2020, 
 # Day 9, Part 2
 
-# Objective: Find a contiguous set of at least two numbers from the list that sum the the invalid number from part 1 (in the case for my dataset, this is 144381670). The answer to the puzzle is the sum of the lowest and highest number in this set.
+# Objective: Find a contiguous set of at least two numbers from the list that 
+# sum the the invalid number from part 1 (in the case for my dataset, this is 
+# 144381670). The answer to the puzzle is the sum of the lowest and highest 
+# number in this set.
 
 from day9_part1 import parse_input
 

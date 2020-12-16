@@ -1,7 +1,8 @@
 # AOC 2020, 
 # Day 9, Part 1
 
-# Objective: Input is list of numbers. Find first number that is not a sum of 2 of the 25 preceding numbers
+# Objective: Input is list of numbers. Find first number that is not a sum of 
+# 2 of the 25 preceding numbers
 
 def parse_input(file_name):
     data_left = True

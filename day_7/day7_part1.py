@@ -1,7 +1,9 @@
 # AOC 2020, 
 # Day 7, Part 1
 
-# Objective: Input is list of rules on what different colored bags must contain. How many bag colors are there that can ultimately (so directly or indirectly though chaining) contain a shiny gold bag?
+# Objective: Input is list of rules on what different colored bags must 
+# contain. How many bag colors are there that can ultimately (so directly or 
+# indirectly though chaining) contain a shiny gold bag?
 
 import re
 

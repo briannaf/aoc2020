@@ -1,9 +1,14 @@
 # AOC 2020, 
 # Day 13, Part 1
 
-# Objective: Input is 2 lines -- line one is the timestamp you will be at the port and ready to board any available buses. Line 2 is the bus schedules. The ID # of the bus is the interval in minutes that it arrives back at the port (so ID 5 means the bus will be there at 0, 5, 10, so on). And x for the id # means the bus is out of service.
+# Objective: Input is 2 lines -- line one is the timestamp you will be at the 
+#   port and ready to board any available buses. Line 2 is the bus schedules. 
+# The ID # of the bus is the interval in minutes that it arrives back at the 
+#   port (so ID 5 means the bus will be there at 0, 5, 10, so on). An x for
+#   the id # means the bus is out of service.
 
-# What is the ID of the earliest bus you can catch multiplied by the number of minutes you'll need to wait?
+# What is the ID of the earliest bus you can catch multiplied by the number of 
+#   minutes you'll need to wait?
 
 def parse_input(file_name):
     data_left = True

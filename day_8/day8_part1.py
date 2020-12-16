@@ -1,7 +1,8 @@
 # AOC 2020, 
 # Day 8, Part 1
 
-# Objective: Find value of accumulator value right before infinite loop in input
+# Objective: Find value of accumulator value right before infinite loop in 
+# input
 # Opcodes: 
 #   acc: add argument to accumulator
 #   nop: do nothing

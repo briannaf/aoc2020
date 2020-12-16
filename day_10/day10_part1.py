@@ -1,7 +1,13 @@
 # AOC 2020, 
 # Day 10, Part 1
 
-# Objective: Each entry in the input list is the "joltage" of a power adapter you posess. Each adapter can take 1, 2, or 3 jolts lower than its rating and still work (and of course the same rating works). Treat the carging outlet as 0 jolts and your device to charfe as being rated for 3 volts higher than the highest-rated adapter in your bag. If you use every adapter at once, what is the number of 1-jolt differences multiplied by the number of 3-jolt differences?
+# Objective: Each entry in the input list is the "joltage" of a power adapter 
+# you posess. Each adapter can take 1, 2, or 3 jolts lower than its rating and
+# still work (and of course the same rating works). Treat the carging outlet 
+# as 0 jolts and your device to charfe as being rated for 3 volts higher than 
+# the highest-rated adapter in your bag. If you use every adapter at once, 
+# what is the number of 1-jolt differences multiplied by the number of 3-jolt
+#  differences?
 
 def parse_input(file_name):
     data_left = True
